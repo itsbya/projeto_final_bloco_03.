@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import type Produto from "../../models/Produto";
 import { buscar } from "../../services/Service";
-import { ShoppingCart } from "@phosphor-icons/react";
 import { toastAlerta } from "../../util/toastAlerta";
 import { PulseLoader } from "react-spinners";
+import { ShoppingCartIcon } from "@phosphor-icons/react";
 
 function DetalhesProduto() {
     const [produto, setProduto] = useState<Produto | null>(null);
@@ -61,7 +61,7 @@ function DetalhesProduto() {
                         onClick={adicionarAoCarrinho}
                         className="flex items-center justify-center gap-3 bg-teal-500 text-white py-4 px-8 rounded-xl font-bold text-xl hover:bg-teal-600 transition shadow-md"
                     >
-                        <ShoppingCart size={32} /> Adicionar ao Carrinho
+                        <ShoppingCartIcon size={32} /> Adicionar ao Carrinho
                     </button>
                 </div>
             </div>
