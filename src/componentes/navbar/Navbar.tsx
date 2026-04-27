@@ -1,4 +1,4 @@
-import { ShoppingCart, User } from "@phosphor-icons/react";
+import { ShoppingCartIcon, UserIcon } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -6,6 +6,7 @@ function Navbar() {
     <div className="w-full bg-slate-800 text-white flex justify-center py-4">
       <div className="container flex justify-between text-lg px-4">
         <Link to='/home' className="text-2xl font-bold uppercase hover:text-slate-300 transition">
+          <img src="https://ik.imagekit.io/o02kjfcyy/produtos_farmacia/home.webp" alt="Logo" className="w-10 h-10" />
           Farmácia Generation
         </Link>
 
@@ -15,9 +16,9 @@ function Navbar() {
           <Link to='/cadastrarCategoria' className="hover:underline cursor-pointer">Nova Categoria</Link>
           <Link to='/cadastrarProduto' className="hover:underline cursor-pointer">Novo Produto</Link>
           <div className="hover:underline cursor-pointer">Sair</div>
-          <User size={32} weight="bold" />
+          <UserIcon size={32} weight="bold" />
           <Link to='/carrinho'>
-            <ShoppingCart size={32} weight="bold" className="hover:text-teal-400 transition" />
+            <ShoppingCartIcon size={32} weight="bold" className="hover:text-teal-400 transition" />
           </Link>
         </div>
       </div>

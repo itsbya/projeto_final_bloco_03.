@@ -13,7 +13,7 @@ function Home() {
                     </div>
 
                     <div className="flex justify-center ">
-                        <img src="https://ik.imagekit.io/v8uvp69v5/home-logo.png?updatedAt=1706034105151" alt="Imagem Home" className='w-2/3' />
+                        <img src="https://ik.imagekit.io/o02kjfcyy/produtos_farmacia/home.webp" alt="Imagem Home" className='w-2/3' />
                     </div>
                 </div>
             </div>
