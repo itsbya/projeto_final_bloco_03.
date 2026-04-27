@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
     return (
         <>
@@ -8,7 +10,7 @@ function Home() {
                         <p className='text-xl'>Aqui você encontra os melhores medicamentos e produtos de saúde!</p>
 
                         <div className="flex justify-around gap-4">
-                            <button className='rounded bg-white text-slate-800 py-2 px-4'>Ver produtos</button>
+                            <Link to="/produtos" className='rounded bg-white text-slate-800 py-2 px-4'>Ver produtos</Link>
                         </div>
                     </div>
 
