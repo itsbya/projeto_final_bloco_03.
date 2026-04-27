@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DNA } from "react-loader-spinner";
+import { PulseLoader } from "react-spinners";
 import { buscar } from "../../services/Service";
 import Categoria from "../../models/Categoria";
 import CardCategoria from "./CardCategoria";
@@ -22,15 +22,8 @@ function ListaCategorias() {
     return (
         <>
             {categorias.length === 0 && (
-                <div className="flex justify-center">
-                    <DNA
-                        visible={true}
-                        height="200"
-                        width="200"
-                        ariaLabel="dna-loading"
-                        wrapperStyle={{}}
-                        wrapperClass="dna-wrapper mx-auto"
-                    />
+                <div className="flex justify-center py-10">
+                    <PulseLoader color="#0D9488" size={20} />
                 </div>
             )}
             <div className="flex justify-center w-full my-4">

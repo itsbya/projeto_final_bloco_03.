@@ -4,7 +4,7 @@ import type Produto from "../../models/Produto";
 import { buscar } from "../../services/Service";
 import { ShoppingCart } from "@phosphor-icons/react";
 import { toastAlerta } from "../../util/toastAlerta";
-import { DNA } from "react-loader-spinner";
+import { PulseLoader } from "react-spinners";
 
 function DetalhesProduto() {
     const [produto, setProduto] = useState<Produto | null>(null);
@@ -36,7 +36,7 @@ function DetalhesProduto() {
     if (!produto) {
         return (
             <div className="flex justify-center py-20">
-                <DNA visible={true} height="200" width="200" ariaLabel="dna-loading" />
+                <PulseLoader color="#0D9488" size={20} />
             </div>
         );
     }
