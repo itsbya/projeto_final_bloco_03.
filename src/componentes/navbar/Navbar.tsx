@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="w-full bg-slate-800 text-white flex justify-center py-4">
       <div className="container flex justify-between text-lg px-4">
-        <Link to='/home' className="text-2xl font-bold uppercase hover:text-slate-300 transition">
+        <Link to='/home' className="flex items-center gap-2 text-2xl font-bold uppercase hover:text-slate-300 transition">
           <img src="https://ik.imagekit.io/o02kjfcyy/produtos_farmacia/home.webp" alt="Logo" className="w-10 h-10" />
           Farmácia Generation
         </Link>
