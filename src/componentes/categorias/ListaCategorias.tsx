@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { PulseLoader } from "react-spinners";
 import { buscar } from "../../services/Service";
-import Categoria from "../../models/Categoria";
 import CardCategoria from "./CardCategoria";
+import type Categoria from "../../models/Categoria";
 
 function ListaCategorias() {
     const [categorias, setCategorias] = useState<Categoria[]>([]);

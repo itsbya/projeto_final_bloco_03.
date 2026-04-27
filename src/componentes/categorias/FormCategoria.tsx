@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { atualizar, buscar, cadastrar } from "../../services/Service";
 import type Categoria from "../../models/Categoria";
 import { toastAlerta } from "../../util/toastAlerta";
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect, type ChangeEvent } from "react";
 
 function FormCategoria() {
     const [categoria, setCategoria] = useState<Categoria>({} as Categoria);
