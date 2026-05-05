@@ -14,6 +14,7 @@ import DeletarProduto from './componentes/produtos/DeletarProduto'
 import Carrinho from './paginas/carrinho/Carrinho'
 import DetalhesProduto from './paginas/produtos/DetalhesProduto'
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -37,6 +38,8 @@ function App() {
       </div>
       <Footer />
     </BrowserRouter>
+
+
   )
 }
 
